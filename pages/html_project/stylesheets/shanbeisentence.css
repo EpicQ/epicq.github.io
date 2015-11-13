@@ -1,0 +1,28 @@
+﻿body {
+}
+
+*{
+    /*border:1px solid red;*/
+}
+
+#header{
+    position:static;
+}
+
+#main{
+    background-color:darkgrey;
+    overflow:hidden;
+}
+
+
+.bgimg{
+    margin-top:50px;
+    margin-bottom:50px;
+    background-color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:500px;
+    width:900px;
+}

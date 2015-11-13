@@ -1,0 +1,38 @@
+﻿body {
+    font-family:"Microsoft YaHei";
+}
+
+/*
+#comingsoon{
+    color:white;
+    font-size:30px;
+    text-align:center;
+    line-height:2000px;
+    overflow:hidden;
+    background-image:url(../images/club/bg.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:1080px;
+}
+
+#backtoindex{
+    color:white;
+    font-size:30px;
+    text-align:center;
+    position:absolute;
+    top:-100px;
+}
+*/
+
+#club_backtoindex{
+    position: absolute;
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+    font-size:50px;
+}

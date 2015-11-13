@@ -1,0 +1,63 @@
+﻿body {
+    font-family:"Microsoft YaHei";
+    
+}
+
+*{
+    /*border:1px solid red;*/
+}
+
+#header{
+    margin-top:0px;
+    z-index:2147483647;
+    font-weight:normal;
+}
+
+#main{
+    background-color:darkgrey;
+    overflow:hidden;
+}
+
+
+.bgimg{
+    margin-top:90px;
+    margin-bottom:60px;
+    background-color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:450px;
+    width:900px;
+    overflow:hidden;
+}
+
+#content_1_main{
+    margin-top:20px;
+    font-size:25px;
+    font-weight:normal;
+    color:black;
+    right:100px;
+    text-align:center;
+}
+
+#content_1_images img{
+    left:0px;
+    top:-60px;
+    margin-top:0px;
+}
+
+#Qcode{
+    float:right;
+    margin-top:230px;
+    position:absolute;
+    right:230px;
+}
+#down_tip{
+    color:#289c84;
+    font-size:30px;
+    float:right;
+    margin-top:350px;
+    position:absolute;
+    right:150px;
+}

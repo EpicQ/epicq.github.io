@@ -1,0 +1,374 @@
+﻿body { /*默认字体微软雅黑，当页面宽度小于900px时，页面元素固定*/
+    font-family:'Microsoft YaHei';
+    margin:0;
+    min-width: 900px;
+    width:expression(document.body.clientWidth < 900? "900px": "auto" ); 
+}
+
+*{  /*下面的注释取消后，会显示所有元素的框框*/
+    /*
+    border:1px solid red;
+    */
+    
+    padding:0;
+}
+
+.outer { /*布局框架，底端颜色块*/
+    width:100%;   
+
+}
+.inner { /*布局框架，中间的内容，宽度900px，居中*/
+    position: relative;
+    max-width: 900px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+/************************************
+    link-style 链接的文字样式
+************************************/
+
+a:link {
+    color:white;
+    text-decoration: none;
+}
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    color:#289c84;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+
+/************************************
+    header 最上面固定的导航栏
+************************************/
+
+#header { /*最底层的div，用于页面布局*/
+  background-color: #212121;
+  width:100%;
+  height:110px;
+  position:fixed;
+  z-index:999;
+  font-weight:bold;
+}
+
+#header_content{ /*内容div，控制居中，宽度900px*/
+    padding-top:10px;
+    max-width: 900px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+#header_image{ /*图片div，左浮动*/
+    margin-top:10px;
+    float:left;
+}
+#header_image img{ /*控制图片大小*/
+    width:170px;
+    height:69px;
+} 
+
+#nav_bar{ /*导航栏布局div*/
+    float:right;
+    margin-top:12px;
+    color:white;
+}
+
+.nav{ /*导航按钮div*/
+    float:left;
+    font-size:35px;
+    margin-top:15px;
+    margin-left:30px;
+}
+
+/************************************
+    content1 扇贝网
+************************************/
+
+#main1 { /*布局div，同时控制颜色，注释部分为插入图片作为背景的样式*/
+    background-color:#289c84;
+    /*background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;*/
+    height:710px;
+}
+
+#content_1{ /*无实际用途，为了显示框框时更清晰，么么哒~自己增加功能吧*/
+    height:710px;
+}
+
+#content_1_images img{ /*内容中的配图，脱离文档流，位置随心变*/
+    float:left;
+    margin-top:160px;
+    position:absolute;
+    left:-350px;
+}
+
+#content_1_main{ /*内容中的描述文字，脱离文档流，位置随心变*/
+    margin-top:200px;
+    float:right;
+    font-size:30px;
+    font-weight:bold;
+    text-align:right;
+    line-height:2em;
+    position:absolute;
+    right:0;
+}
+
+#content_1_main span{ /*内容中的强调部分，可以通过span标签实现*/
+    color:white;
+    font-weight:100;
+}
+
+
+/************************************
+    content2 扇贝单词 （注释同content1部分）
+************************************/
+
+#main2 {
+    background-color:darkgray;
+    /*background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;*/
+    height:650px;
+    overflow:hidden;
+}
+
+#content_2{
+    height:650px;  
+}
+
+#content_2_main{
+    margin-top:50px;
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    text-align:left;
+    line-height:2em;
+    position:absolute;
+    left:280px;
+    z-index:990;
+}
+
+#content_2_main span{
+    color:#289c84;
+    font-size:50px;
+    font-weight:100;
+}
+/*
+#content_2_images_1 img{
+    width:320px;
+    height:600px;
+    float:right;
+    margin-top:50px;
+    position:absolute;
+    right:100px;
+}
+
+#content_2_images_2 img{
+    width:320px;
+    height:600px;
+    float:right;
+    margin-top:50px;
+    position:absolute;
+    right:-150px;
+}
+*/
+
+/*content_2_word_home.png的CSS动画*/
+
+#change1 {
+    width: 500px;
+    height: 500px;
+    perspective: 900px;
+    position:absolute;
+    left:-250px;
+}
+
+.phone1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 600px;
+    margin: -220px 0 0 -100px;
+    background: url(../images/index/content_2_word_home.png) 0 0 / 320px 600px no-repeat;
+    box-shadow: -7px 10px 10px #333;
+    transform: rotateX(60deg) rotateY(3deg) rotateZ(-25deg);
+    transform-origin: 50% 50%;
+    transition: all 1s;
+}
+
+#change1:hover .phone1 {
+    transform: rotate3d(0, 0, 0, 0deg);
+    box-shadow: -100px 100px 20px darkgray;
+}
+
+/*content_2_word_plan.png的CSS动画*/
+
+#change2 {
+    width: 500px;
+    height: 500px;
+    perspective: 900px;
+    position:absolute;
+    right:-150px;
+}
+
+.phone2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 600px;
+    margin: -220px 0 0 -100px;
+    background: url(../images/index/content_2_word_plan.png) 0 0 / 320px 600px no-repeat;
+    box-shadow: -7px 10px 10px #333;
+    transform: rotateX(60deg) rotateY(3deg) rotateZ(-25deg);
+    transform-origin: 50% 50%;
+    transition: all 1s;
+}
+
+#change2:hover .phone2 {
+    transform: rotate3d(0, 0, 0, 0deg);
+    box-shadow: -100px 100px 20px darkgray;
+}
+
+/************************************
+    content3 扇贝阅读 （注释同content1部分）
+************************************/
+
+#main3 {
+    background-color:#0489d6;
+    /*background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;*/
+    height:710px;
+}
+
+#content_3{
+    height:710px;
+}
+
+#content_3_images img{
+    float:left;
+    margin-top:130px;
+    position:absolute;
+    left:-100px;
+}
+
+#content_3_main{
+    margin-top:200px;
+    float:right;
+    font-size:30px;
+    font-weight:bold;
+    text-align:right;
+    line-height:2em;
+    position:absolute;
+    right:0;
+}
+
+#content_3_main span{
+    color:white;
+    font-size:50px;
+    font-weight:100;
+}
+
+/************************************
+    content4 扇贝炼句 （注释同content1部分）
+************************************/
+
+#main4 {
+    background-color:#fee79b;
+    /*background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;*/
+    height:710px;
+}
+
+#content_4{
+    height:710px;
+}
+
+#content_4_main{
+    margin-top:200px;
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    text-align:left;
+    line-height:2em;
+    position:absolute;
+    left:0;
+}
+
+#content_4_main span{
+    color:white;
+    font-size:50px;
+    font-weight:100;
+}
+
+#content_4_images img{
+    margin-top:160px;
+    float:right;
+    position:absolute;
+    right:-180px;
+}
+
+/************************************
+    content5 扇贝社区 （注释同content1部分）
+************************************/
+
+#main5 {
+    background-color:#e85c41;
+    /*background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;*/
+    height:642px;
+}
+
+#content_5{
+    height:642px;
+}
+
+#content_5_images img{
+    float:left;
+    margin-top:160px;
+    position:absolute;
+    left:-100px;
+}
+
+#content_5_main{
+    margin-top:200px;
+    float:right;
+    font-size:30px;
+    font-weight:bold;
+    text-align:right;
+    line-height:2em;
+    position:absolute;
+    right:0;
+}
+
+#content_5_main span{
+    color:white;
+    font-size:50px;
+    font-weight:100;
+}
+
+/************************************
+    footer 最底端的版权声明
+************************************/
+#footer{
+   width:100%;
+   background-color: #212121;
+   height:100px;
+   color:white;
+   text-align:center;
+   line-height: 80px;
+   overflow:hidden;
+}
+
