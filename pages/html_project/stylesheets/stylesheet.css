@@ -2,7 +2,7 @@
     font-family:'Microsoft YaHei';
     margin:0;
     min-width: 900px;
-    width:expression(document.body.clientWidth < 900? "900px": "auto" ); 
+    width:expression(document.body.clientWidth < 899? "900px": "auto" ); 
 }
 
 *{  /*下面的注释取消后，会显示所有元素的框框*/
@@ -14,7 +14,7 @@
 }
 
 .outer { /*布局框架，底端颜色块*/
-    width:99%;   
+    width:100%;   
 
 }
 .inner { /*布局框架，中间的内容，宽度900px，居中*/
