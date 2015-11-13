@@ -1,2 +1,156 @@
-﻿body {
+﻿
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8em;
+	background: #1d1d1d;
+}
+
+#header{
+    top:0px;
+}
+
+
+
+#reading_bj{
+    height:1250px;
+}
+
+h1 {
+	font-family:"Microsoft YaHei";
+	text-align: center;
+	font-weight: normal;
+	font-size: 4em;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 20px 0;
+}
+h1 small {
+	display: block;
+	font-size: 0.5em;
+	color: #999;
+}
+img {
+	border: none;
+}
+ul.columns {
+	width: 960px;
+	list-style: none;
+	margin: 150px auto;
+	padding: 0;
+}
+ul.columns li {
+	width: 270px;
+	float: left;
+	display: inline;
+	margin: 10px;
+	padding: 0;
+	position: relative;
+}
+ul.columns li:hover {
+	z-index: 99;
+}
+ul.columns li img {
+	position: relative;
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+ul.columns li:hover img {
+	z-index: 999;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ul.columns li .info {
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	padding: 210px 10px 20px;
+	width: 220px;
+	display: none;
+	background: #fff;
+	font-size: 1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+ul.columns li:hover .info {
+	display: block;
+}
+ul.columns li h2 {
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+}
+ul.columns li p {
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+#main1{
+    background-color:#0489d6;
+    height:350px;
+}
+
+#content_reading_1{
+    text-align:center;
+    font-weight:200;
+    color:white;
+    line-height:2em;
+    font-size:30px;
+    padding:40px;
+}
+
+#content_reading_1 span{
+    font-size:50px;
+    font-weight:bold;
+}
+
+#main2{
+    background-color:#289c84;
+    height:400px;
+}
+
+#content_reading_2{
+    text-align:center;
+    font-weight:200;
+    color:white;
+    line-height:2em;
+    font-size:30px;
+    padding:40px;
+}
+
+#content_reading_2 span{
+    font-size:50px;
+    font-weight:bold;
+}
+
+#main3{
+    background-color:#1d1d1d;
+    height:250px;
+}
+#reading_Qcode{
+    margin:50px auto;
+    height:100px;
+}
+
+#reading_Qcode img{
+    position:absolute;
+    left:400px;
+}
+#content_reading_3{
+    text-align:center;
+    font-weight:200;
+    color:white;
+    line-height:2em;
+    font-size:30px;
+}
+
+#content_reading_3 span{
+    font-size:50px;
+    font-weight:bold;
 }
