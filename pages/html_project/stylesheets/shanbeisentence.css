@@ -51,6 +51,7 @@ a{text-decoration:none}
 .menu{border-left:1px solid #ccc;border-right:1px solid #ccc}
 .menu:last-child{border-bottom:1px solid #ccc}
 .menu summary{height:40px;line-height:40px;text-indent:10px;outline:0;font-size:14px;font-weight:700;border-top:1px solid #ddd;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#FEFEFE),color-stop(1,#CCC));cursor:pointer}
+.menu summary::-webkit-details-marker{display:none}
 .menu summary:before{content:"+";display:inline-block;width:16px;height:16px;margin-right:10px;font-size:18px;font-weight:700}
 .menu[open] summary:before{content:"-"}
 .menu ul{padding:10px 0}

@@ -6,9 +6,9 @@
 }
 
 *{  /*下面的注释取消后，会显示所有元素的框框*/
-    /*
-    border:1px solid red;
-    */
+    
+    /*border:1px solid red;*/
+    
     
     padding:0;
 }
@@ -18,10 +18,10 @@
 
 }
 .inner { /*布局框架，中间的内容，宽度900px，居中*/
-    position: relative;
+    position:relative;
     max-width: 900px;
-    padding: 0px;
     margin: 0 auto;
+
 }
 
 /************************************
