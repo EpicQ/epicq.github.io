@@ -97,6 +97,7 @@ a:active {
     background-repeat:no-repeat;
     background-position:center;*/
     height:710px;
+    width:100%; 
 }
 
 #content_1{ /*无实际用途，为了显示框框时更清晰，么么哒~自己增加功能吧*/
@@ -137,11 +138,13 @@ a:active {
     background-repeat:no-repeat;
     background-position:center;*/
     height:650px;
-    overflow:hidden;
+    overflow:hidden; 
+    width:100%; 
 }
 
 #content_2{
-    height:650px;  
+    height:650px; 
+    
 }
 
 #content_2_main{
@@ -249,6 +252,7 @@ a:active {
     background-repeat:no-repeat;
     background-position:center;*/
     height:710px;
+    width:100%;
 }
 
 #content_3{
@@ -289,6 +293,7 @@ a:active {
     background-repeat:no-repeat;
     background-position:center;*/
     height:710px;
+    width:100%;
 }
 
 #content_4{
@@ -329,6 +334,7 @@ a:active {
     background-repeat:no-repeat;
     background-position:center;*/
     height:642px;
+    width:100%;
 }
 
 #content_5{
