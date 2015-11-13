@@ -1,6 +1,8 @@
 ﻿body { /*默认字体微软雅黑，当页面宽度小于900px时，页面元素固定*/
     font-family:'Microsoft YaHei';
     margin:0;
+    min-width: 900px;
+    width:expression(document.body.clientWidth < 900? "900px": "auto" ); 
 }
 
 *{  /*下面的注释取消后，会显示所有元素的框框*/
