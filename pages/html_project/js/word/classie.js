@@ -10,7 +10,7 @@
 
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
- /* 代码整理：懒人之家 www.lanrenzhijia.com */
+
 ( function( window ) {
 
 'use strict';

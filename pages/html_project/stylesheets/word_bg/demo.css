@@ -43,7 +43,7 @@ section {
 .codrops-header h1 {
 	margin: 0;
 	font-weight: 200;
-	font-size: 3em;
+	font-size: 5em;
 	line-height: 1;
 }
 
@@ -120,7 +120,7 @@ section {
 	letter-spacing: 1px;
 	width: 165px;
 }
-/* 代码整理：懒人之家 www.lanrenzhijia.com */
+
 .codrops-demos a:hover,
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {

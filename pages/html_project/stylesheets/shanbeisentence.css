@@ -12,17 +12,110 @@
 #main{
     background-color:darkgrey;
     overflow:hidden;
+    height:1900px;
 }
 
+#content{
+    height:1900px;
+    margin-top:10px;
+}
 
-.bgimg{
-    margin-top:50px;
-    margin-bottom:50px;
+#content_left{
+    float:left;
+    width:200px;
+    height:1000px;
+    overflow:hidden;
+}
+
+#content_right{
+    float:right;
+    width:650px;
+    height:1900px;
     background-color:white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height:500px;
-    width:900px;
+    padding:20px;
 }
+
+/************以上为布局*************/
+
+
+
+
+
+
+/*******下面是左边的菜单原版*******/
+
+*{margin:0;padding:0}
+a{text-decoration:none}
+#conter{width:1000px;margin:auto}
+#help-left{width:200px;font-family:'microsoft YaHei';float:left}
+.menu{border-left:1px solid #ccc;border-right:1px solid #ccc}
+.menu:last-child{border-bottom:1px solid #ccc}
+.menu summary{height:40px;line-height:40px;text-indent:10px;outline:0;font-size:14px;font-weight:700;border-top:1px solid #ddd;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#FEFEFE),color-stop(1,#CCC));cursor:pointer}
+.menu summary:before{content:"+";display:inline-block;width:16px;height:16px;margin-right:10px;font-size:18px;font-weight:700}
+.menu[open] summary:before{content:"-"}
+.menu ul{padding:10px 0}
+.menu ul li{list-style:none;text-indent:25px;font-size:12px;height:30px;line-height:30px}
+.menu ul li a{display:block;color:#666}
+.menu ul li a:hover{text-decoration:underline}
+
+/***********下面是自定义修改********/
+
+ul{
+    background-color:white;
+}
+
+/*********下面是右边文字的处理*********/
+blockquote{
+    text-indent:2em;
+    background-color:darkgray;
+    font-weight:bold;
+}
+#content_right{
+    line-height:1.7em;
+    font-family:Arial,'Microsoft YaHei';
+    font-size:17px;
+}
+
+#content_right p{
+    text-indent:2em;
+}
+
+
+/************两栏结束**************/
+#sentence_content_bj{
+    background-color:#289c84;
+    height:350px;
+    overflow:hidden;
+}
+
+#sentence_Qcode{
+    position:absolute;
+    left:700px;
+}
+
+#sentence_content{
+    padding:50px;
+}
+
+#sentence_content_main{
+    float:right;
+    text-align:center;
+    font-weight:200;
+    color:white;
+    line-height:2em;
+    font-size:30px;
+    margin-top:130px;
+}
+
+#sentence_content_main span{
+    font-size:50px;
+    font-weight:bold;
+}
+
+#sentence_img img{
+    height:600px;
+    width:320px;
+    position:absolute;
+    top:50px;
+}
+

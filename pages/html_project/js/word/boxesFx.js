@@ -8,7 +8,7 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
- /* 代码整理：懒人之家 www.lanrenzhijia.com */
+
 ;( function( window ) {
 	
 	'use strict';
