@@ -105,28 +105,28 @@
 #one{
     width:25%;
     float:left;
-    background-image:url(../images/1.jpg);
+    background-image:url(../images/hr_bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }
 #two{
     width:25%;
     float:left;
-    background-image:url(../images/2.jpg);
+    background-image:url(../images/geek_bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }
 #three{
     width:25%;
     float:left;
-    background-image:url(../images/3.jpg);
+    background-image:url(../images/friends_bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }
 #four{
     width:25%;
     float:left;
-    background-image:url(../images/4.jpg);
+    background-image:url(../images/me_bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }
@@ -174,7 +174,7 @@ a:active {
     line-height: 2000px;
     overflow:hidden;
 
-    background-image:url(../images/5.png);
+    background-image:url(../images/coming_bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
     height:1080px;
