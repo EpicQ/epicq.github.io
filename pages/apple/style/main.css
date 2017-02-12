@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS 公共 */
+*{
+    /*border: red solid 1px;*/
+    font-family: "Microsoft YaHei","微软雅黑";
+    font-size: 11px;
+}
+.outer {
+    width:100%;
+
+}
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header{
+    height: 50px;
+    background-color: black;
+}
+.nav{
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    max-width: 1100px;
+}
+.nav span{
+    
+    width: 26px;
+    height: 45px;
+    display: inline-block;
+}
+.nav a:hover{
+    color:#888888;
+}
+.nav a:hover span{
+    filter:alpha(Opacity=60);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+}
+@media screen and (min-width:768px){
+    .nav li{
+        float:left;
+        width:11%;
+        text-align: center;
+    }
+    .nav a{
+        color:white;
+        font-size: 13px;
+    }
+    .displayNone{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .nav{
+        padding:0 10px;
+    }
+    .nav li{
+        display:none;
+    }
+    .nav li.responsive{
+        display: block;
+        float: left;
+        width:33%;
+    }
+    .nav li.middle{
+        text-align: center;
+    }
+    .nav li.right{
+        text-align: right;
+    }
+
+}
+.nav span.menu{
+    background: url(../images/logo/menu.png) center no-repeat;
+}
+
+.nav span.logo{
+    background: url(../images/logo/logo.png) center no-repeat;
+}
+
+.nav span.search{
+    background: url(../images/logo/search.png) center no-repeat;
+}
+
+.nav span.shop{
+    background: url(../images/logo/shop.png) center no-repeat;
+}
+
+
+/* banner */
+.banner{
+    background-image:url(../images/index/banner1.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:665px;
+}
+
+
+/* content */
+.contentNav{
+    background-repeat:no-repeat;
+    background-position:center;
+    box-sizing:border-box;
+    border: 1px solid white;
+}
+@media screen and (min-width:1024px){
+    .content{
+        height:230px;
+    }
+    .contentNav{
+        height:230px;
+        width:25%;
+        float:left;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .content{
+        height: 460px;
+    }
+    .contentNav{ 
+        height:230px;
+        width:50%; 
+        float:left;
+    } 
+}
+@media screen and (max-width:768px){
+    .content{
+        height:920px;
+    }
+    .contentNav{ 
+        height:230px;
+        width:100%;  
+    } 
+}
+
+#cN1{
+    background-image:url(../images/index/contentNav1.png);
+}
+#cN2{
+    background-image:url(../images/index/contentNav2.png);
+}
+#cN3{
+    background-image:url(../images/index/contentNav3.png);
+}
+#cN4{
+    background-image:url(../images/index/contentNav4.png);
+}
+
+
+.temp{
+    overflow: hidden;
+}
+.tempText{
+    margin:0 10px;
+    padding:10px 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.tempText p{
+    color: #888888;
+    line-height: 20px;
+}
+
+/* bottomNav */
+@media screen and (min-width: 768px){
+    .bottomNavLow{
+        display: none;
+    }
+    .bottomNav{
+        height: 300px;
+    }
+    .bottomNavItem{
+        margin: 0 10px;
+    }
+    .bottomNavItem ul{
+        float: left;
+        width:20%;
+    }
+    .bottomNavItem li{
+        line-height: 23px;
+    }
+    .bottomNavItemMain{
+        padding-top:25px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:768px){
+    .bottomNavItem li{
+        margin: 0 30px;
+        line-height: 23px;
+    }
+    .bottomNavItem li.bottomNavItemMain{
+        display: block;
+        line-height: 39px;
+        border-bottom: 1px solid #CCCCCC;
+        margin:0 10px;
+    }
+    
+
+}
+
+
+/* footer */
+.footer{
+    height: 70px;
+}
+.footerText{
+    margin:10px 10px;
+}
+.footerText p{
+    color: #888888;
+    margin-bottom: 15px;
+}
+.footerText a{
+    margin:0 7px;
+}
+.footerLink{
+    margin-left:20px;
+}
